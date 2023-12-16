@@ -51,11 +51,11 @@ document.addEventListener("DOMContentLoaded", function () {
                   </div>
                   <div data-atropos-offset="5" class="more_addinfo">
                     <div class="more_addinfo_price">
-                      <p class="caption-mono grey">Price</p>
+                      <p class="caption-mono grey" data-lang="price">Price</p>
                       <p style="color: #fff" class="base-mono">1.63 ETH</p>
                     </div>
                     <div class="more_addinfo_bid">
-                      <p class="caption-mono grey">Highest Bid</p>
+                      <p class="caption-mono grey" data-lang="highestbid">Highest Bid</p>
                       <p style="color: #fff" class="base-mono">0.33 wETH</p>
                     </div>
                   </div>
@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <article class="toprated_info">
           <h5 class="sans">${randomName}</h5>
           <div class="toprated_info_sales">
-            <p class="toprated_info_salestext grey">Total Sales:</p>
+            <p class="toprated_info_salestext grey" data-lang="total_sales">Total Sales:</p>
             <p class="toprated_info_price">34.53 ETH</p>
           </div>
         </article>
