@@ -1760,7 +1760,7 @@ body {
     justify-content: space-evenly;
     align-items: normal;
     grid-template-columns: repeat(2, 330px);
-    grid-template-rows: 224px auto 77px;
+    grid-template-rows: 60% auto 77px;
     -moz-column-gap: 30px;
     column-gap: 30px;
     row-gap: 20px;
@@ -2274,7 +2274,7 @@ body {
     margin: 0 auto;
     height: auto;
     grid-template-columns: repeat(2, 510px);
-    grid-template-rows: 347px auto auto;
+    grid-template-rows: 65% auto auto;
     row-gap: 30px;
     align-items: start;
     justify-content: space-between;
