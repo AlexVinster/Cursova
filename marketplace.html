@@ -1,1 +1,192 @@
-<!doctypehtml><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><meta content="ie=edge"http-equiv=X-UA-Compatible><title>Browse Marketplace</title><link href=images/favicon.png rel=icon type=image/x-icon><link href=css/normalize.css rel=stylesheet><link href=css/style.css rel=stylesheet><link href=css/atropos.css rel=stylesheet><div class=body-wrapper><div class=overlay onclick=toggleClasses()></div><header class=header><section class=header_inner><nav class="hvr-shrink header_logo"><a href=index.html class=header_logo_container><img alt="NFT Marketplace"src=images/storefront.svg class=header_storefrontimg> <img alt="NFT Marketplace"src=images/marketplace.svg class=header_marketplaceimg></a></nav><a class=header_menubtn onclick=toggleClasses()><img alt=Menu src=images/burgermenu.svg class=header_burgermenu></a><nav class=header_menu><a class=header_close_menu onclick=toggleClasses()><img alt=Menu src=images/burgermenu.svg class=header_burgermenu> </a><a href=marketplace.html class="hvr-shrink header_menuitem"><img alt=Market src=images/market.svg><p class=base-sans>Marketplace</p></a><a href=topcreators.html class="hvr-shrink header_menuitem"><img alt=Rank src=images/rank.svg><p class=base-sans>Rankings</p></a><a href=connectwallet.html class="hvr-shrink header_menuitem"><img alt=Wallet src=images/wallet.svg><p class=base-sans>Connect a wallet</p></a><a href=createaccount.html class="hvr-shrink btn header_menuitem_button"><img alt=User src=images/user.svg><p class=base-sans>Sign Up</p></a><div class=header_join><p class=base-sans>Join our community<div class=footer_socialpics><a href=https://discord.com/ ><img alt=Discord src=images/discord.svg> </a><a href=https://youtube.com/ ><img alt=Youtube src=images/youtube.svg> </a><a href=https://twitter.com/ ><img alt=Twitter src=images/twitter.svg> </a><a href=https://instagram.com/ ><img alt=Instagram src=images/instagram.svg></a></div></div></nav></section></header><div class=overlay></div><section class="container marketplace"><div class=marketplace_inner><div class=marketplace_headline><h4 class=sans>Browse Marketplace</h4><p class=base-sans>Browse through more than 50k NFTs on the NFT Marketplace.</div><input class=marketplace_search placeholder="Search your favourite NFTs"type=search></div></section><section class=tabbar><div class=tabbar_inner><div class=tabbar_inner_item style="border-bottom:2px solid #858584"><h5 class=sans>NFTs</h5><p class=caption-mono style=background:#858584;color:#fff>302</div><div class=tabbar_inner_item><h5 class=sans style=color:#858584>Collection</h5><p class=caption-mono>67</div></div></section><section class="container marketplace_cardrow"></section><div class=scrollup><svg class=scrollup_svg viewBox="-2 -2 52 52"><path class=scrollup_path d="M24,0 A24,24 0 0,1 48,24 A24,24 0 0,1 24,48 A24,24 0 0,1 0,24 A24,24 0 0,1 24,0 Z"/></svg></div><footer class="container footer"><div class=footer_inner><section class=footer_socials><a href=index.html class="hvr-shrink header_logo_container"><img alt=storefront src=images/storefront.svg class=header_storefrontimg> <img alt=marketplace src=images/marketplace.svg class=header_marketplaceimg></a><p class=base-sans>NFT marketplace UI created with Anima for Figma.<p class=base-sans>Join our community<div class=footer_socialpics><a href=https://discord.com/ class=hvr-shrink><img alt=Discord src=images/discord.svg> </a><a href=https://youtube.com/ class=hvr-shrink><img alt=Youtube src=images/youtube.svg> </a><a href=https://twitter.com/ class=hvr-shrink><img alt=Twitter src=images/twitter.svg> </a><a href=https://instagram.com/ class=hvr-shrink><img alt=Instagram src=images/instagram.svg></a></div></section><section class=footer_explore><h5 class=mono>Explore</h5><a href=marketplace.html class=hvr-shrink><p class=base-sans>Marketplace</p></a><a href=topcreators.html class=hvr-shrink><p class=base-sans>Rankings</p></a><a href=connectwallet.html class=hvr-shrink><p class=base-sans>Connect a wallet</p></a></section><section class=footer_form><div class=footer_text><h4 class=sans>Join our weekly digest</h4><p class=base-sans>Get exclusive promotions & updates straight to your inbox.</div><input class=footer_input placeholder="Enter Your Email Address"type=email> <a href=./page404.html class="hvr-shrink btn footer_button"><img alt=Rocket src=images/rocket.png>Subscribe</a></section></div><p class=caption-sans style=color:#ccc>Ⓒ NFT Market. Use this template freely.</footer></div><script src=js/marketplace.js></script><script src=js/search.js></script><script src=js/atropos.js></script><script src=https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js></script><script src=js/main.js></script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Browse Marketplace</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/atropos.css">
+  </head>
+  <body>
+    <div class="body-wrapper">
+      <div class="overlay" onclick="toggleClasses()"></div>
+      <header class="header">
+        <section class="header_inner">
+          <nav class="header_logo hvr-shrink">
+            <a href="index.html" class="header_logo_container">
+              <img
+                src="images/storefront.svg"
+                alt="NFT Marketplace"
+                class="header_storefrontimg">
+              <img
+                src="images/marketplace.svg"
+                alt="NFT Marketplace"
+                class="header_marketplaceimg">
+            </a>
+          </nav>
+          <a class="header_menubtn" onclick="toggleClasses()">
+            <img
+              src="images/burgermenu.svg"
+              alt="Menu"
+              class="header_burgermenu">
+          </a>
+          <nav class="header_menu">
+            <a class="header_close_menu" onclick="toggleClasses()">
+              <img
+                src="images/burgermenu.svg"
+                alt="Menu"
+                class="header_burgermenu">
+            </a>
+            <a href="marketplace.html" class="header_menuitem hvr-shrink">
+              <img src="images/market.svg" alt="Market">
+              <p class="base-sans">Marketplace</p>
+            </a>
+            <a href="topcreators.html" class="header_menuitem hvr-shrink">
+              <img src="images/rank.svg" alt="Rank">
+              <p class="base-sans">Rankings</p>
+            </a>
+            <a href="connectwallet.html" class="header_menuitem hvr-shrink">
+              <img src="images/wallet.svg" alt="Wallet">
+              <p class="base-sans">Connect a wallet</p>
+            </a>
+            <a
+              href="createaccount.html"
+              class="header_menuitem_button btn hvr-shrink">
+              <img src="images/user.svg" alt="User">
+              <p class="base-sans">Sign Up</p>
+            </a>
+            <div class="header_join">
+              <p class="base-sans">Join our community</p>
+              <div class="footer_socialpics">
+                <a href="https://discord.com/">
+                  <img src="images/discord.svg" alt="Discord">
+                </a>
+                <a href="https://youtube.com/">
+                  <img src="images/youtube.svg" alt="Youtube">
+                </a>
+                <a href="https://twitter.com/">
+                  <img src="images/twitter.svg" alt="Twitter">
+                </a>
+                <a href="https://instagram.com/">
+                  <img src="images/instagram.svg" alt="Instagram">
+                </a>
+              </div>
+            </div>
+          </nav>
+        </section>
+      </header>
+
+      <div class="overlay"></div>
+
+      <section class="marketplace container">
+        <div class="marketplace_inner">
+          <div class="marketplace_headline">
+            <h4 class="sans">Browse Marketplace</h4>
+            <p class="base-sans">
+              Browse through more than 50k NFTs on the NFT Marketplace.
+            </p>
+          </div>
+          <input
+            type="search"
+            class="marketplace_search"
+            placeholder="Search your favourite NFTs">
+        </div>
+      </section>
+      <section class="tabbar">
+        <div class="tabbar_inner">
+          <div
+            style="border-bottom: 2px solid #858584"
+            class="tabbar_inner_item">
+            <h5 class="sans">NFTs</h5>
+            <p style="background: #858584; color: #fff" class="caption-mono">
+              302
+            </p>
+          </div>
+          <div class="tabbar_inner_item">
+            <h5 style="color: #858584" class="sans">Collection</h5>
+            <p class="caption-mono">67</p>
+          </div>
+        </div>
+      </section>
+      <section class="marketplace_cardrow container"></section>
+      <div class="scrollup">
+        <svg class="scrollup_svg" viewBox="-2 -2 52 52">
+          <path
+            class="scrollup_path"
+            d="M24,0 A24,24 0 0,1 48,24 A24,24 0 0,1 24,48 A24,24 0 0,1 0,24 A24,24 0 0,1 24,0 Z" />
+        </svg>
+      </div>
+      <footer class="footer container">
+        <div class="footer_inner">
+          <section class="footer_socials">
+            <a href="index.html" class="header_logo_container hvr-shrink">
+              <img
+                src="images/storefront.svg"
+                alt="storefront"
+                class="header_storefrontimg">
+              <img
+                src="images/marketplace.svg"
+                alt="marketplace"
+                class="header_marketplaceimg">
+            </a>
+            <p class="base-sans">
+              NFT marketplace UI created with Anima for Figma.
+            </p>
+            <p class="base-sans">Join our community</p>
+            <div class="footer_socialpics">
+              <a href="https://discord.com/" class="hvr-shrink">
+                <img src="images/discord.svg" alt="Discord">
+              </a>
+              <a href="https://youtube.com/" class="hvr-shrink">
+                <img src="images/youtube.svg" alt="Youtube">
+              </a>
+              <a href="https://twitter.com/" class="hvr-shrink">
+                <img src="images/twitter.svg" alt="Twitter">
+              </a>
+              <a href="https://instagram.com/" class="hvr-shrink">
+                <img src="images/instagram.svg" alt="Instagram">
+              </a>
+            </div>
+          </section>
+          <section class="footer_explore">
+            <h5 class="mono">Explore</h5>
+            <a href="marketplace.html" class="hvr-shrink">
+              <p class="base-sans">Marketplace</p>
+            </a>
+            <a href="topcreators.html" class="hvr-shrink">
+              <p class="base-sans">Rankings</p>
+              </a>
+            <a href="connectwallet.html" class="hvr-shrink">
+              <p class="base-sans">Connect a wallet</p>
+              </a>
+          </section>
+          <section class="footer_form">
+            <div class="footer_text">
+              <h4 class="sans">Join our weekly digest</h4>
+              <p class="base-sans">
+                Get exclusive promotions & updates straight to your inbox.
+              </p>
+            </div>
+            <input
+              class="footer_input"
+              type="email"
+              placeholder="Enter Your Email Address">
+            <a href="./page404.html" class="footer_button btn hvr-shrink">
+              <img src="images/rocket.png" alt="Rocket">Subscribe</a>
+          </section>
+        </div>
+        <p style="color: #cccccc" class="caption-sans">
+          Ⓒ NFT Market. Use this template freely.
+        </p>
+      </footer>
+    </div>
+    <script src="js/marketplace.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/atropos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
